@@ -13,6 +13,10 @@ class MainScreen(QMainWindow):
         window = SaveWordScreen(self)
         window.show()
         self.hide()
+    def btn_lookup_clicked(self):
+        print("Look Up Clicked!")
+    def btn_settings_clicked(self):
+        print("Settings clicked!")
 
 class SaveWordScreen(QMainWindow):
     def __init__(self, parent=None):
@@ -23,6 +27,8 @@ class SaveWordScreen(QMainWindow):
         window = MainScreen(self)
         window.show()
         self.hide()
+    def btn_save_clicked(self):
+        print("Save clicked!")
 
 
 def main():
