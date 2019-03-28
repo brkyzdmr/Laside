@@ -1,0 +1,3 @@
+*.ui
+.vscode/
+__pycache__/
